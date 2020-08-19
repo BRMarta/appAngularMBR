@@ -1,0 +1,129 @@
+:root { 
+    --color-black: #000;
+    --color-black-50: rgba(0, 0, 0, 0.05);
+    --color-black-100: rgba(0, 0, 0, 0.1);
+    --color-black-150: rgba(0, 0, 0, 0.15);
+    --color-black-200: rgba(0, 0, 0, 0.2);
+    --color-black-300: rgba(0, 0, 0, 0.3);
+    --color-black-400: rgba(0, 0, 0, 0.4);
+    --color-black-500: rgba(0, 0, 0, 0.5);
+    --color-black-600: rgba(0, 0, 0, 0.6);
+    --color-black-700: rgba(0, 0, 0, 0.7);
+    --color-black-800: rgba(0, 0, 0, 0.8);
+    --color-black-900: rgba(0, 0, 0, 0.9);
+    --color-accent: #ffc107;
+    --color-danger: #dc3545;
+    --color-dark: #343a40;
+    --color-disabled: #e9e9e9;
+    --color-info: #17a2b8;
+    --color-light: #f8f9fa;
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-white: #fff;
+  }
+  
+  // Palettes
+  
+  // Base Primary color
+  $base-primary: (
+    50 : #ede1ed,
+    100 : #d2b3d3,
+    200 : #b481b5,
+    300 : #964f97,
+    400 : #802981,
+    500 : #69036b,
+    600 : #610363,
+    700 : #560258,
+    800 : #4c024e,
+    900 : #3b013c,
+    A100 : #fc72ff,
+    A200 : #fb3fff,
+    A400 : #f90cff,
+    A700 : #ec00f1,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+  // Base Accent color
+  $base-accent: (
+    50 : #f8edf9,
+    100 : #efd2ef,
+    200 : #e4b4e5,
+    300 : #d995da,
+    400 : #d07fd2,
+    500 : #c868ca,
+    600 : #c260c5,
+    700 : #bb55bd,
+    800 : #b44bb7,
+    900 : #a73aab,
+    A100 : #fff8ff,
+    A200 : #fdc5ff,
+    A400 : #fb92ff,
+    A700 : #fa79ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+  
+  // Base Warn color
+  $base-warn: (
+    50 : #f9e0e0,
+    100 : #f0b3b3,
+    200 : #e68080,
+    300 : #db4d4d,
+    400 : #d42626,
+    500 : #cc0000,
+    600 : #c70000,
+    700 : #c00000,
+    800 : #b90000,
+    900 : #ad0000,
+    A100 : #ffd7d7,
+    A200 : #ffa4a4,
+    A400 : #ff7171,
+    A700 : #ff5858,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);

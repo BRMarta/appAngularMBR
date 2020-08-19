@@ -1,0 +1,12 @@
+<div>
+    <form (submit)="formSubmit()"  method="get" id="postId">
+        
+         <div class="lbl">ID:</div><input name="postId" type="text" [(ngModel)]="post.id"/><br/>
+         <div class="lbl">Title:</div><input name="title" type="text" [(ngModel)]="post.title"/><br/>
+         <div class="lbl">User ID:</div><input name="userId" type="text" [(ngModel)]="post.userId"/><br/>
+         <div class="lbl">Body:</div><textarea name="body" rows="10" cols="30" [(ngModel)]="post.body"></textarea><br/>
+         <div class="botones">
+            <button class="btnPersonalizado" id="sendMessage" type="submit" form="postId">Actualizar</button>
+          </div>
+    </form>
+</div>

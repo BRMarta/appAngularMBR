@@ -1,0 +1,54 @@
+.formulario{
+    max-width: 500px;
+    padding: 16px;
+    margin: 10px auto;
+
+}
+.formulario h1{
+    background-color: rgb(82, 169, 245);
+    color: #ffffff;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: 300;
+    text-align: center;
+}
+.formulario .divLineaFormulario{
+   text-align: center;
+   padding-bottom: 10px;
+}
+.formulario .divLineaFormulario label{
+    font-weight: bolder;
+}
+.formulario .botones{
+    margin-top: 20px;
+    text-align: center;
+}
+.formulario .botones button{
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 5px;
+    border: black solid 1px;
+}
+.formulario .botones #enviar{
+    background-color: rgb(10, 151, 53);
+}
+.formulario .botones #resetear{
+    background-color: chocolate;
+}
+.divLineaFormulario .divEtiqueta{
+    float: left;
+    text-align: right;
+    width: 200px;
+    padding:3px;
+}
+
+.divAlerta{
+    color: brown;
+    background-color: #f8d7da;
+    font-weight: 900;
+    text-align: center;
+    padding: 3px;
+}

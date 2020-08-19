@@ -1,0 +1,24 @@
+<div class="formulario">
+    <h1 id="tituloFormulario"></h1>
+
+    <form [formGroup]="form" (ngSubmit)="onSaveForm()">
+        <div class="divPadre">
+            <div class="divLineaFormulario">
+                <div class="divEtiqueta"><label>Email: </label></div>
+                <div class="divInput"><input type="text" formControlName="mail"></div>
+            </div>
+            <div class="divLineaFormulario">
+                <div class="divEtiqueta"><label>Contraseña: </label></div>
+                <div class="divInput"><input type="password" formControlName="pass"></div>
+            </div>
+            <div class="divAlerta" *ngIf="pass.invalid && pass.touched" id="passWrong">
+                
+            </div>
+            
+        </div>
+        <div class="botones">
+            <button id="enviar" type="submit" [disabled]="!form.valid">Enviar</button>
+            <button id="resetear" (click)="onResetForm()">Reset</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,22 @@
+<h4>Un post</h4>
+<div>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Title: {{ post.title }}</mat-card-title>
+            <mat-card-subtitle><strong>Post Id:</strong> {{ post.id }} from <strong>User: </strong>{{ post.userId }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="center">
+            <strong>Content:</strong> {{ post.body }}
+        </mat-card-content>
+    </mat-card>
+    <div *ngFor="let comment of comments">
+        <h3>Title of comment: {{ comment.name }}</h3>
+        <p><strong>Comment Id:</strong> {{ comment.id }} from <strong>Post: </strong>{{ comment.postId }}</p>
+         <p>
+            <strong>User name:</strong> {{ comment.email }}
+            <strong>Content:</strong> {{ comment.body }}
+         </p>   
+                
+    </div>
+    
+</div>
