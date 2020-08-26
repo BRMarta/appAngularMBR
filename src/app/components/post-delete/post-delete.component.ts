@@ -24,7 +24,7 @@ export class PostDeleteComponent implements OnInit {
   }
 
   getPost = (id: string) => {
-    this.postService.get(id).subscribe(res => {
+    this.postService.getById(id).subscribe(res => {
       this.post = res;
     });
 
@@ -33,7 +33,8 @@ export class PostDeleteComponent implements OnInit {
     this.postService.delete(this.id).subscribe(res => {
       this.post = res;
     });
-
+    alert('Borrado con éxito, redirigiendo...');
+    this.router.navigate(['/']);
   }
 
 }

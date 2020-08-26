@@ -1,1 +1,28 @@
-<p>user-profile works!</p>
+<app-nav-bar></app-nav-bar>
+<div class="formulario">
+    <h1 id="tituloFormulario">Ver Perfil</h1>
+
+    <form [formGroup]="form">
+        <div class="divPadre">
+
+            <div class="divLineaFormulario">
+                <div class="divEtiqueta"><label>Nombre: </label></div>
+                <div class="divInput"><input type="text" formControlName="nombre" [disabled]="true"></div>
+            </div>
+            <div class="divLineaFormulario">
+                <div class="divEtiqueta"><label>Apellidos: </label></div>
+                <div class="divInput"><input type="text" formControlName="apellidos" [disabled]="true"></div>
+            </div>            
+            <div class="divLineaFormulario">
+                <div class="divEtiqueta"><label>Email: </label></div>
+                <div class="divInput"><input type="text" formControlName="mail" [disabled]="true"></div>
+            </div>
+            <div class="divLineaFormulario">
+                <div class="divEtiqueta"><label>Contraseña: </label></div>
+                <div class="divInput"><input type="password" formControlName="pass" [disabled]="true"></div>
+            </div>
+        </div>
+    </form>
+      
+</div>
+

@@ -1,5 +1,6 @@
+<app-nav-bar></app-nav-bar>
 <div class="formulario">
-    <h1 id="tituloFormulario"></h1>
+    <h1 id="tituloFormulario">{{titulo}}</h1>
 
     <form [formGroup]="form" (ngSubmit)="onSaveForm()">
         <div class="divPadre">
@@ -11,17 +12,7 @@
             <div class="divLineaFormulario">
                 <div class="divEtiqueta"><label>Apellidos: </label></div>
                 <div class="divInput"><input type="text" formControlName="apellidos"></div>
-            </div>
-            <div class="divLineaFormulario">
-                <div class="divEtiqueta"><label>Sexo: </label></div>
-                <div class="divInput">
-                    <input type="radio" id="hombre" formControlName="sexo" value="hombre">
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" id="mujer" formControlName="sexo" value="mujer">
-                    <label for="mujer">Mujer</label>
-                </div>                
-            </div>
-            
+            </div>            
             <div class="divLineaFormulario">
                 <div class="divEtiqueta"><label>Email: </label></div>
                 <div class="divInput"><input type="text" formControlName="mail"></div>

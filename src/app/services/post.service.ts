@@ -17,8 +17,11 @@ export class PostService {
   getQuery(): Observable<any> {
     return this.apiService.get(this.baseUrl);
   }
-  get(id: string): Observable<any> {
+  getById(id: string): Observable<any> {
     return this.apiService.get(`${this.baseUrl}/${id}`);
+  }
+  getByUser(id: string): Observable<any> {
+    return this.apiService.get(`${this.baseUrl}?userId=${id}`);
   }
   delete(id: string): Observable<IPost>{
     return this.apiService.delete(`${this.baseUrl}/${id}`);

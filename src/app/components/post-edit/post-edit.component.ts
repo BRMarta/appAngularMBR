@@ -31,7 +31,7 @@ export class PostEditComponent implements OnInit {
   }
 
   getPost = (id: string) => {
-    this.postService.get(id).subscribe(res => {
+    this.postService.getById(id).subscribe(res => {
       this.post = res;
     });
 

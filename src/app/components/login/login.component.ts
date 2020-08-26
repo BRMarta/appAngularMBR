@@ -3,7 +3,6 @@ import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms'
 import { variables } from 'src/app/shared/variables';
 import { UserService } from 'src/app/services/user.service';
 import { IUser } from 'src/app/models/iuser';
-import { LocalStorageService } from 'src/app/services/local-storage.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -18,7 +17,7 @@ export class LoginComponent implements OnInit {
   mail = new FormControl('', [Validators.required, Validators.email]);
   pass = new FormControl('', [Validators.required, Validators.minLength(8)]);
 
-  constructor(fb: FormBuilder, private userService: UserService, private route: Router, private localStorage: LocalStorageService) {
+  constructor(fb: FormBuilder, private userService: UserService, private route: Router) {
     this.form = fb.group({
         mail: this.mail,
         pass: this.pass,
@@ -35,11 +34,9 @@ export class LoginComponent implements OnInit {
     if (this.form.valid){
       console.log('Guardado');
       console.log(this.form);
-      alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.form.value, null, 4));
-      this.user.email = this.form.controls.email.value;
+      this.user.email = this.form.controls.mail.value;
       this.user.pass = this.form.controls.pass.value;
       this.loginUser();
-
     }
   }
   loginUser = () => {
@@ -50,7 +47,8 @@ export class LoginComponent implements OnInit {
       this.user.email = res.data.email;
       this.user.avatar = res.data.avatar;
 
-      this.localStorage.setToken(JSON.stringify(this.user));
+      localStorage.setItem('user', JSON.stringify(this.user));
+      localStorage.setItem('existe', 'si');
       this.route.navigate(['/']);
     });
   }

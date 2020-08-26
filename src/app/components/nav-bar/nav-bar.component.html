@@ -1,0 +1,10 @@
+<div class="botones" *ngIf="!hayUser">
+    <button mat-button color="primary" routerLink="/form">Registro</button>
+    <button mat-button color="primary" routerLink="/login">Login</button>
+</div>
+<div class="botones" *ngIf="hayUser">
+    <button mat-button color="primary" routerLink="/user-profile">Ver Perfil</button>
+    <button mat-button color="primary" routerLink="/form">Editar Perfil</button>
+    <button mat-button color="primary" (click)="cerrarSesion()">Cerrar Sesión</button>
+</div>
+
